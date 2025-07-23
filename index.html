@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MARS Space Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: white;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo {
+      font-weight: bold;
+      color: #0d1d5e;
+      font-size: 22px;
+    }
+
+    .lang {
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+    }
+
+    .lang img {
+      width: 18px;
+      margin-right: 5px;
+    }
+
+    /* Main form box */
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    }
+
+    .container h2 {
+      text-align: center;
+      color: #0d1d5e;
+    }
+
+    .form-switch {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .form-switch button {
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    .form-switch .active {
+      background-color: #f1f1f1;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input {
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    .qr {
+      text-align: center;
+      margin: 10px 0;
+      font-size: 14px;
+      color: gray;
+    }
+
+    .submit-btn {
+      background-color: #f68d7d;
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #e57368;
+    }
+
+    .offerta {
+      text-align: right;
+      margin-top: -10px;
+      font-size: 14px;
+      color: orangered;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">MARS<sup>°</sup> IT SCHOOL</div>
+    <div class="lang">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Uzbekistan.svg" alt="Uzbek Flag" />
+      O'zb
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="offerta">Offerta imzolash 🔗</div>
+    <h2>Spacega xush kelibsiz</h2>
+
+    <div class="form-switch">
+      <button class="active">O'quvchiman</button>
+      <button>Ota-onaman</button>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Modme ID yoki Telefon raqam" required />
+      <input type="password" placeholder="Parol" required />
+      <div class="qr">QR code orqali kirish</div>
+      <button type="submit" class="submit-btn">kirish</button>
+    </form>
+  </div>
+
+</body>
+</html>
